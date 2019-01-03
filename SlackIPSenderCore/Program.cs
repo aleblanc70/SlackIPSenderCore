@@ -24,7 +24,7 @@ namespace SlackIPSenderCore
             // Get the IP
             var myIPs = Dns.GetHostEntry(hostName).AddressList;
             var json = myIPs.Select(ip => ip.ToString()).ToJson().IndentJson();
-            log.InfoFormat("Here is my My Last IP Adresses: {0} {1} {0} Delivered On: {2} ", Environment.NewLine, json, DateTime.Today.ToString());
+            log.InfoFormat("Here is my My Last IP Adresses: {0} {1} {0} Delivered On: {2} ", Environment.NewLine, json, DateTime.UtcNow.ToString("R"));
             Thread.Sleep(1000);
         }
 
