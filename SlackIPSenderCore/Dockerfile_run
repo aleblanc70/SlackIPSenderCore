@@ -1,0 +1,6 @@
+﻿FROM microsoft/dotnet:2.1-runtime
+WORKDIR /app
+
+# copy everything 
+COPY ./bin/Debug/netcoreapp2.1/ ./
+ENTRYPOINT ["dotnet", "SlackIPSenderCore.dll"]
