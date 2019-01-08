@@ -8,7 +8,7 @@ pi@raspberrypi:~ $ docker run --rm -it microsoft/dotnet:2.1-runtime dotnet --inf
 ```
 pi@raspberrypi:~ $ docker run --rm -it microsoft/dotnet:2.1-runtime-stretch-slim-arm32v7 dotnet --info
 ```
-**To Remove am image base on a TAG**
+**To Remove an image base on a TAG**
 ```
 pi@raspberrypi:~ $ docker images -a
 REPOSITORY          TAG                                IMAGE ID            CREATED             SIZE
