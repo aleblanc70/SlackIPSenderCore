@@ -27,14 +27,14 @@ Base on my Dockerfile I take image 2.1-runtime**
 pi@raspberrypi:~ $ docker build -f Dockerfile_run -t slackipsendercore_run .
 ```
 
-You can see my Dockerfile here: [slackipsendercore_run](https://github.com/aleblanc70/SlackIPSenderCore/blob/http/SlackIPSenderCore/Dockerfile_run)
+*You can see my Dockerfile here: [slackipsendercore_run](https://github.com/aleblanc70/SlackIPSenderCore/blob/http/SlackIPSenderCore/Dockerfile_run)*
 
 **Build within the SDK image and you can put more stuff like your unittest etc...**
 ```
 pi@raspberrypi:~ $ docker build -f Dockerfile_sdk -t slackipsendercore_sdk .
 ```
 
-You can see my Dockerfile here: [slackipsendercore_sdk](https://github.com/aleblanc70/SlackIPSenderCore/blob/http/SlackIPSenderCore/Dockerfile_sdk)
+*You can see my Dockerfile here: [slackipsendercore_sdk](https://github.com/aleblanc70/SlackIPSenderCore/blob/http/SlackIPSenderCore/Dockerfile_sdk)*
 
 **Run with your newly create image**
 ```
