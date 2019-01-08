@@ -1,3 +1,5 @@
+This idea come from this post by [Scott Hanselman](https://www.hanselman.com/blog/BuildingRunningAndTestingNETCoreAndASPNETCore21InDockerOnARaspberryPiARM32.aspx) then I add my command that I need to remember cause it was done with some trial and error and I did not want to loose all those command.
+
 **Download image and running dotnet --info**
 ```
 pi@raspberrypi:~ $ docker run --rm -it microsoft/dotnet:2.1-runtime dotnet --info
