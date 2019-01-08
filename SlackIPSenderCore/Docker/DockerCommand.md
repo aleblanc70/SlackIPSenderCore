@@ -4,7 +4,7 @@ pi@raspberrypi:~ $ docker run --rm -it microsoft/dotnet:2.1-runtime dotnet --inf
 ```
 **Is Equal because docker is multi-arch so on download it know from what architecture is running from.**
 ```
-docker run --rm -it microsoft/dotnet:2.1-runtime-stretch-slim-arm32v7 dotnet --info
+pi@raspberrypi:~ $ docker run --rm -it microsoft/dotnet:2.1-runtime-stretch-slim-arm32v7 dotnet --info
 ```
 **To Remove am image base on a TAG**
 ```
@@ -22,15 +22,21 @@ Caution it Remove all images**
 pi@raspberrypi:~ $ docker rmi 813c9f82f99c
 ```
 **Build your images
-Base on my Dockerfile I take images 2.1-runtime**
+Base on my Dockerfile I take image 2.1-runtime**
 ```
 pi@raspberrypi:~ $ docker build -f Dockerfile_run -t slackipsendercore_run .
 ```
-**Build within the image and you can put more stuff like your unittest etc...**
+
+You can see my Dockerfile here: [slackipsendercore_run](https://github.com/aleblanc70/SlackIPSenderCore/blob/http/SlackIPSenderCore/Dockerfile_run)
+
+**Build within the SDK image and you can put more stuff like your unittest etc...**
 ```
 pi@raspberrypi:~ $ docker build -f Dockerfile_sdk -t slackipsendercore_sdk .
 ```
-**Run with your images**
+
+You can see my Dockerfile here: [slackipsendercore_sdk](https://github.com/aleblanc70/SlackIPSenderCore/blob/http/SlackIPSenderCore/Dockerfile_sdk)
+
+**Run with your newly create image**
 ```
 pi@raspberrypi:~ $ docker run --rm slackipsendercore_run
 or
