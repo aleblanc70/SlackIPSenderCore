@@ -7,12 +7,13 @@ Is Equal because docker is multi-arch so on download it know from what architect
 docker run --rm -it microsoft/dotnet:2.1-runtime-stretch-slim-arm32v7 dotnet --info
 ```
 To Remove am image base on a TAG
+```
 pi@raspberrypi:~ $ docker images -a
 REPOSITORY          TAG                                IMAGE ID            CREATED             SIZE
 microsoft/dotnet    2.1-sdk                            8c0431f30a5d        2 weeks ago         1.58GB
 microsoft/dotnet    2.1-runtime                        813c9f82f99c        2 weeks ago         154MB
 microsoft/dotnet    2.1-runtime-stretch-slim-arm32v7   813c9f82f99c        2 weeks ago         154MB
-```
+
 docker rmi microsoft/dotnet:2.1-runtime-stretch-slim-arm32v7
 ```
 To Remove am image base on a ID
